@@ -71,6 +71,7 @@ void enlarge(HashMap * map) {
   enlarge_called = 1; //no borrar (testing purposes)
 
   Pair ** antiguo=map->buckets;
+  map -> capacity *= 2;
   
   
 }

@@ -269,3 +269,14 @@ hashmap.c:73:11: error: unused variable ‘antiguo’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 afb3d16
+Thu 07 Sep 2023 05:24:45 PM UTC: 
+ hashmap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:73:11: error: unused variable ‘antiguo’ [-Werror=unused-variable]
+   73 |   Pair ** antiguo=map->buckets;
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+762f665
