@@ -107,7 +107,11 @@ Pair * searchMap(HashMap * map,  char * key) {
     return NULL;
   }
   long indice= hash(key, map->capacity);
-  
+  while(map->buckets[indice] !=NULL){
+    if( is_equal(map->buckets[indice]->key,key)==0){
+      map->current=indice;
+    }
+  }
   
 }
 
