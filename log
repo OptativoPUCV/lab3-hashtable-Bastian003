@@ -313,3 +313,8 @@ hashmap.c:73:10: error: unused variable ‘old_buckets’ [-Werror=unused-variab
 cc1: all warnings being treated as errors
 Compilation failed
 27b6a03
+Thu 07 Sep 2023 06:11:31 PM UTC: 
+ hashmap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  0|0
+e2a403a
