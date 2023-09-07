@@ -52,7 +52,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     if(map->buckets[repetidos]!=NULL && is_equal(map->buckets[repetidos]->key,key)){
       return;
     }
-    map->buckets[indice]=createPair( char * key,  void * value)
+    map->buckets[indice]=createPair(  key,   value);
   }
   
   
