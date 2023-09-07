@@ -101,6 +101,16 @@ void eraseMap(HashMap * map,  char * key) {
   if(key ==NULL){
     return;
   }
+  long indice= hash(key, map->capacity);
+  while(map->buckets[indice]!= NULL){
+    if(is_equal(map->buckets[indice]->key,key)){
+      map->buckets[indice]->key=NULL;
+      map->size=map->size-1;
+      return;
+    }
+    indice=(indice+1)%(map->capacity);
+  }
+  
 
 }
 
