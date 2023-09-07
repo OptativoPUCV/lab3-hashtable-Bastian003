@@ -110,6 +110,7 @@ Pair * searchMap(HashMap * map,  char * key) {
   while(map->buckets[indice] !=NULL){
     if( is_equal(map->buckets[indice]->key,key)==0){
       map->current=indice;
+      return map->buckets[indice];
     }
   }
   
