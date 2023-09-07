@@ -93,3 +93,14 @@ hashmap.c:51:10: error: unused variable ‘repetidosverificar’ [-Werror=unused
 cc1: all warnings being treated as errors
 Compilation failed
 ef30e57
+Thu 07 Sep 2023 01:37:12 AM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:51:10: error: unused variable ‘repetidos’ [-Werror=unused-variable]
+   51 |     long repetidos=(indice+1)%(map->capacity);
+      |          ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5abcbcb
