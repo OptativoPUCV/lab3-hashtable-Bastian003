@@ -147,6 +147,11 @@ Pair * firstMap(HashMap * map) {
 }
 
 Pair * nextMap(HashMap * map) {
-
+  if(map ==NULL){
     return NULL;
+  }
+  if(map->buckets ==NULL){
+    return NULL;
+  }
+  return NULL;
 }
