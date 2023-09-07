@@ -47,7 +47,9 @@ void insertMap(HashMap * map, char * key, void * value) {
     indice=(indice +1)%(map->capacity);
     
   }
-  
+  for(long i=0;i<map->capacity;i++){
+    long repetidosverificar=(indice+1)%(map->capacity);
+  }
   
   
 

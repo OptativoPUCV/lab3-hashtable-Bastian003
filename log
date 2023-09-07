@@ -82,3 +82,14 @@ Thu 07 Sep 2023 01:33:13 AM UTC:
  tests:  1|5
 total_score: 10/70
 5413fba
+Thu 07 Sep 2023 01:36:57 AM UTC: 
+ hashmap.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:51:10: error: unused variable ‘repetidosverificar’ [-Werror=unused-variable]
+   51 |     long repetidosverificar=(indice+1)%(map->capacity);
+      |          ^~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ef30e57
