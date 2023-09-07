@@ -53,6 +53,8 @@ void insertMap(HashMap * map, char * key, void * value) {
       return;
     }
     map->buckets[indice]=createPair(  key,   value);
+    map->current=indice;
+    map->size=map->size+1;
   }
   
   
