@@ -49,6 +49,10 @@ void insertMap(HashMap * map, char * key, void * value) {
   }
   for(long i=0;i<map->capacity;i++){
     long repetidos=(indice+1)%(map->capacity);
+    if(map->buckets[repetidos]!=NULL && is_equal(map->buckets[repetidos]->key,key)){
+      return;
+    }
+    map->buckets[indice]=createPair( char * key,  void * value)
   }
   
   

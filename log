@@ -104,3 +104,25 @@ hashmap.c:51:10: error: unused variable ‘repetidos’ [-Werror=unused-variable
 cc1: all warnings being treated as errors
 Compilation failed
 5abcbcb
+Thu 07 Sep 2023 01:41:29 AM UTC: 
+ hashmap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:55:38: error: expected expression before ‘char’
+   55 |     map->buckets[indice]=createPair( char * key,  void * value)
+      |                                      ^~~~
+hashmap.c:55:26: error: too few arguments to function ‘createPair’
+   55 |     map->buckets[indice]=createPair( char * key,  void * value)
+      |                          ^~~~~~~~~~
+hashmap.c:19:8: note: declared here
+   19 | Pair * createPair( char * key,  void * value) {
+      |        ^~~~~~~~~~
+hashmap.c:55:64: error: expected ‘;’ before ‘}’ token
+   55 |     map->buckets[indice]=createPair( char * key,  void * value)
+      |                                                                ^
+      |                                                                ;
+   56 |   }
+      |   ~                                                             
+Compilation failed
+d983cf5
