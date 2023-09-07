@@ -47,3 +47,9 @@ hashmap.c:44:8: error: unused variable ‘clave’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 14c9830
+Thu 07 Sep 2023 01:24:15 AM UTC: 
+ hashmap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+af1d133
