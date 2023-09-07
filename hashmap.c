@@ -103,6 +103,7 @@ HashMap * createMap(long capacity) {
     
     return NULL;
   }
+  free(mapa);
 }
 
 void eraseMap(HashMap * map,  char * key) {    
