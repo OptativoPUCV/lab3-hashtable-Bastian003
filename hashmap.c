@@ -54,15 +54,15 @@ void insertMap(HashMap * map, char * key, void * value) {
     
   }
   for(long i=0;i<map->capacity;i++){
-    long repetidos=(indice+1)%(map->capacity);
-    if(map->buckets[repetidos]!=NULL && is_equal(map->buckets[repetidos]->key,key)){
+    
+    if(map->buckets[indice]!=NULL && is_equal(map->buckets[indice]->key,key)){
       return;
     }
-    map->buckets[indice]=createPair(  key,   value);
-    map->current=indice;
-    map->size=map->size+1;
+    indice=(indice+1)%(map->capacity);
   }
-  
+  map->buckets[indice]=createPair(  key,   value);
+  map->current=indice;
+  map->size=map->size+1;
   
 
 }
