@@ -55,8 +55,11 @@ HashMap * createMap(long capacity) {
 
   HashMap* mapa=(HashMap*)malloc(sizeof(HashMap));
   if(mapa !=NULL){
-    
+
+
+    return mapa;
   }else{
+    
     return NULL;
   }
 }
