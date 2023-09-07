@@ -72,6 +72,9 @@ void enlarge(HashMap * map) {
 
   Pair ** antiguo=map->buckets;
   map -> capacity *= 2;
+  map->buckets=(Pair**)malloc(sizeof(Pair*)*map->capacity);
+  
+  
   
   
 }
