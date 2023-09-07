@@ -99,10 +99,16 @@ void eraseMap(HashMap * map,  char * key) {
 
 }
 
-Pair * searchMap(HashMap * map,  char * key) {   
-
-
+Pair * searchMap(HashMap * map,  char * key) {
+  if(map ==NULL){
     return NULL;
+  }
+  if(key ==NULL){
+    return NULL;
+  }
+  long indice= hash(key, map->capacity);
+  
+  
 }
 
 Pair * firstMap(HashMap * map) {

@@ -150,3 +150,17 @@ Thu 07 Sep 2023 01:49:15 AM UTC:
  tests:  5|4
 total_score: 30/70
 58053e8
+Thu 07 Sep 2023 02:45:36 AM UTC: 
+ hashmap.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘searchMap’:
+hashmap.c:109:8: error: unused variable ‘indice’ [-Werror=unused-variable]
+  109 |   long indice= hash(key, map->capacity);
+      |        ^~~~~~
+hashmap.c:112:1: error: control reaches end of non-void function [-Werror=return-type]
+  112 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+75c5666
