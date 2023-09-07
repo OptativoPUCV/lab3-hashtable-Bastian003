@@ -36,3 +36,14 @@ Thu 07 Sep 2023 01:16:20 AM UTC:
  tests:  1|5
 total_score: 10/70
 4d6a0c3
+Thu 07 Sep 2023 01:22:38 AM UTC: 
+ hashmap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:44:8: error: unused variable ‘clave’ [-Werror=unused-variable]
+   44 |   long clave= hash(key, map->capacity);
+      |        ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+14c9830
