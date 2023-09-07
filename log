@@ -258,3 +258,14 @@ Thu 07 Sep 2023 05:19:24 PM UTC:
  tests:  16|1
 total_score: 60/70
 b9bc560
+Thu 07 Sep 2023 05:24:21 PM UTC: 
+ hashmap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:73:11: error: unused variable ‘antiguo’ [-Werror=unused-variable]
+   73 |   Pair ** antiguo=map->buckets;
+      |           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+afb3d16
