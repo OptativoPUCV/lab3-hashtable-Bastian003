@@ -95,7 +95,12 @@ HashMap * createMap(long capacity) {
 }
 
 void eraseMap(HashMap * map,  char * key) {    
-
+  if(map ==NULL){
+    return;
+  }
+  if(key ==NULL){
+    return;
+  }
 
 }
 
