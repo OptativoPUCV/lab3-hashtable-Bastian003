@@ -112,7 +112,9 @@ Pair * searchMap(HashMap * map,  char * key) {
       map->current=indice;
       return map->buckets[indice];
     }
+    indice=(indice+1)%(map->capacity);
   }
+  return NULL;
   
 }
 
