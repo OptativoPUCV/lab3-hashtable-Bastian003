@@ -160,7 +160,7 @@ Pair * nextMap(HashMap * map) {
       return map->buckets[map->current];
 
     }
-    map->buckets[map->current]++;
+    map->current=map->current+1;
   }
   return NULL;
 }
